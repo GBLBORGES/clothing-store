@@ -1,0 +1,46 @@
+.existent-products {
+  display: flex;
+  background-color: #456b91;
+}
+.products {  
+  background-color: #456b91;
+  margin: 0;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px; 
+}
+
+.form-container input {
+ width: 500px;
+ height: 40px;
+}
+
+.cloth-card {
+  background-color: #87CEFA; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cloth-card h2 {
+  border-radius: 2%;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.cloth-card img {
+  width: 150px;
+  border-radius: 2%;
+  height: 180px;
+}
+
+.cloth-card p {
+  font-size: 14px;
+  color: #666;
+}
