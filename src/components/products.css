@@ -1,21 +1,24 @@
+
 .existent-products {
+  justify-content: center;
   display: flex;
-  background-color: #456b91;
+  flex-wrap: wrap;
 }
-.products {  
-  background-color: #456b91;
-  margin: 0;
-}
+
+
+
 .form-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 16px; 
 }
 
 .form-container input {
- width: 500px;
- height: 40px;
+  font-size: 15px;
+  width: 700px;
+  height: 40px;
 }
 
 .cloth-card {
@@ -30,17 +33,34 @@
 .cloth-card h2 {
   border-radius: 2%;
   font-size: 18px;
-  color: #333;
+  color: #377849;
   margin-bottom: 8px;
 }
 
 .cloth-card img {
-  width: 150px;
-  border-radius: 2%;
-  height: 180px;
+  width: 200px;
+  border-radius: 5%;
+  height: 250px;
 }
+
+.cloth-card span {
+ background-color: aquamarine;
+ color: black;
+}
+
 
 .cloth-card p {
   font-size: 14px;
   color: #666;
+}
+
+@media (max-width: 900px) {
+  .form-container input {
+    width: 280px;
+    height: 25px;
+   }
+
+   h1 {
+    font-size: 70%;
+   }
 }

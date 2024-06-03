@@ -44,7 +44,7 @@ function CloathForm() {
         onChange={(e) => setDescription(e.target.value)}
         />
         <input type="text"
-        placeholder="link da imgm do produto"
+        placeholder="link da imagem do produto"
         value={img}
         onChange={(e) => setImg(e.target.value)}
         />
@@ -55,13 +55,12 @@ function CloathForm() {
         />
         <button onClick={(e) => event(e) } >criar</button>
       </form>
-      <div className='products'>    
-      <h1>Nossos Produtos</h1>
+      <h1>Nossos Produtos</h1> 
     <div className='existent-products'>
     {cloth.map(({name,img,price,description}) => {      
       return <ClothCard key={name} name={name}  price={price} description={description} img={img}/>    
     })}
-    </div>
+    
   </div>
             
     </div>
